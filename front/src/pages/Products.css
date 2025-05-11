@@ -1,0 +1,64 @@
+/* src/components/Products.css */
+.products-container {
+    padding: 20px;
+  }
+  
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  .image-container {
+    width: 100%;
+    height: 200px; /* Фиксированная высота для всех изображений */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #f8f9fa; /* Фон на случай, если изображение прозрачное */
+  }
+  
+  .product-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* или 'cover' в зависимости от предпочтений */
+    padding: 10px;
+  }
+
+  /* Стили для заголовка с переносом текста */
+.product-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 10px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* Ограничение в 2 строки */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 2.4em; /* Минимальная высота под 2 строки */
+  line-height: 1.2em;
+}
+  
+  .product-description {
+    font-size: 0.9rem;
+    color: #6c757d;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Ограничиваем описание 3 строками */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 15px;
+    flex-grow: 1;
+  }
+  
+  .product-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #28a745;
+    margin-bottom: 15px;
+  }

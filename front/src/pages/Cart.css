@@ -1,0 +1,37 @@
+/* Улучшение отображения поля ввода количества */
+.quantity-control {
+    max-width: 150px;
+    margin: 0 auto;
+  }
+  
+  .quantity-input {
+    text-align: center;
+    width: 50px;
+    -moz-appearance: textfield;
+  }
+  
+  /* Убираем стрелки у input[type=number] */
+  .quantity-input::-webkit-outer-spin-button,
+  .quantity-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Стили для изображений товаров */
+  .cart-item-image {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+  
+  /* Общие стили для корзины */
+  .cart-container {
+    padding: 20px;
+  }
+  
+  .cart-summary {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
