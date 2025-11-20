@@ -1,0 +1,6 @@
+- [Главная](/README.md)
+- [Начало работы](/getting-started/README.md)
+- [Управление задачами](/tasks/README.md)
+- [Отчеты](/reports/README.md)
+- [Решение проблем](/troubleshooting/README.md)
+- [Изображения](/images/README.md)
